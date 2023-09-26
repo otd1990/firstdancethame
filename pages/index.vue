@@ -77,12 +77,14 @@
             <div class="image--1">
               <img src="images/ed-4.jpg" alt="First Dance About Me" />
             </div>
-            <div class="image--2">
-              <img
-                src="images/gov-logo.jpg"
-                alt="First Dance I.S.T.D (Imperial Society Teachers of Dance) Logo"
-              />
-            </div>
+          </div>
+        </div>
+        <div class="col-12 mt-5 mt-md-3 mb-3">
+          <div class="image--2">
+            <img
+              src="images/gov-logo.jpg"
+              alt="First Dance I.S.T.D (Imperial Society Teachers of Dance) Logo"
+            />
           </div>
         </div>
       </div>
@@ -90,11 +92,11 @@
   </section>
   <section class="home_qlinks">
     <div class="home__qlinks">
-      <div class="container">
+      <div class="container-lg">
         <h2 class="home__qlinks">Quick Links</h2>
       </div>
     </div>
-    <div class="container card__container">
+    <div class="container-lg card__container">
       <div class="row justify-content-center">
         <div class="col-12 col-sm-6 col-md-4">
           <div class="card">
@@ -142,5 +144,29 @@
 .home_qlinks .card a {
   color: inherit;
   text-decoration: none;
+}
+
+.home__qlinks {
+  padding: 2rem 0 4rem 0;
+}
+
+.card__container {
+  margin-top: -7rem;
+}
+
+@media only screen and (max-width: 1400px) {
+  .home_qlinks .container-lg {
+    max-width: 1390px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .home__qlinks {
+    padding-left: 4.5rem;
+  }
+
+  .card__container {
+    margin-top: -6rem;
+  }
 }
 </style>
